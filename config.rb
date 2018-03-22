@@ -7,7 +7,7 @@ end
 
 
 activate :gh_pages do |gh_pages|
-  gh_pages.remote = 'git@github.com:an_absolute/github_remote_name.git'
+  gh_pages.remote = 'git@github.com:an_absolute/richardssinclair/clearchannel.github.io'
 end
 
 # Layouts
