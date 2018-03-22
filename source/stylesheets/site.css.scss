@@ -1,4 +1,47 @@
-.nav {
-  background-color: black;
-  color: white;
+body {
+  margin: 0 !important;
+  .nav {
+    background-color: black;
+    color: white;
+    p {
+      display: inline-flex;
+      margin-left: 20px;
+    }
+  }
+
+  .body {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 20px;
+
+      .city-description {
+        margin: 10px;
+        padding: 10px;
+        max-width: 700px;
+        background-color: gray;
+      }
+
+      .weather {
+        padding: 10px;
+        margin: 10px;
+        max-width: 400px;
+        background-color: gray;
+      }
+
+      .sample {
+        margin: 10px;
+        max-width: 700px;
+        padding: 100px 292px 100px 292px;
+        border: 1px solid gray;
+      }
+      .maps {
+        margin: 10px;
+        max-width: 400px;
+        img {
+          width: 100%;
+        }
+      }
+
+  }
+
 }
