@@ -4,26 +4,32 @@ title: Clear Channel
 
 <div class="nav">
   <p>Select a city:</p>
-  <button type="button" name="button">city.name</button>
+
+  <select id="select">
+    <option value="london">London</option>
+    <option value="newYork">New York</option>
+    <option value="rome">Rome</option>
+  </select>
+
 </div>
 
 <div class="body">
 
-  <div class="city-description">
+  <div class="city-description" id="city-description">
 
 
     <h1 id="name">
       City.name
-          <%= data.test.dog %>
     </h1>
 
     <p id="description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
     </p>
   </div>
 
-  <div class="weather">
-    <h1>the weather channel</h1>
+  <div class="weather" id="weather">
+    <h1 id="temp"></h1>
+    <p id="wind"></p>
   </div>
 
   <div class="sample">
