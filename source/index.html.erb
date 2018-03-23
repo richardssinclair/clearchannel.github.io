@@ -5,44 +5,63 @@ title: Clear Channel
 <div class="nav">
   <p>Select a city:</p>
 
-  <select id="select">
-    <option value="london">London</option>
-    <option value="newYork">New York</option>
-    <option value="rome">Rome</option>
-  </select>
-
+  <div class="select-box">
+    <select id="select">
+      <option value="default">default</option>
+    </select>
+    <span class="fa fa-sort-desc">
+  </div>
 </div>
 
 <div class="body">
 
-  <div class="city-description" id="city-description">
 
+  <div class="row">
+    <div class="col-sm-12 col-md-7">
 
-    <h1 id="name">
-      City.name
-    </h1>
+      <div class="city-description" id="city-description">
 
-    <p id="description">
+        <h1 class="city" id="name">
+          London:
+        </h1>
 
-    </p>
-  </div>
+        <p class="description" id="description">
+          London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.
+        </p>
+      </div>
 
-  <div class="weather" id="weather">
-    <h1 id="temp"></h1>
-    <p id="wind"></p>
-  </div>
+      <div class="sample">
 
-  <div class="sample">
-    <h1>SAMPLE</h1>
-  </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://carbonmade-media.accelerator.net/31674453;960x640.webp" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://carbonmade-media.accelerator.net/31411788;960x640.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://carbonmade-media.accelerator.net/31674453;960x640.webp" alt="Third slide">
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div class="maps">
-    <img src="https://i2-prod.getwestlondon.co.uk/incoming/article9313114.ece/ALTERNATES/s615/Untitled.jpg" alt="">
-  </div>
+    </div>
+
+    <div class="col-sm-12 col-md-5">
+
+      <div class="weather" id="weather">
+        <h1 class="temp" id="temp">15&#176;</h1>
+        <p class="view" id="wind">Mostly Cloudy</p>
+        <p class="date" id="date">Tue Jan 23 2018 14:11:57</p>
+      </div>
+
+      <div class="maps">
+        <img src="https://i2-prod.getwestlondon.co.uk/incoming/article9313114.ece/ALTERNATES/s615/Untitled.jpg" alt="">
+      </div>
+
+    </div>
+  </div><!-- row -->
+
 </div>
-
-<!-- <%= link_to(
-  "Read Documentation",
-  "https://middlemanapp.com/basics/templating_language/",
-  target: "_blank"
-) %> -->

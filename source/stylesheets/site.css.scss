@@ -1,51 +1,111 @@
-
+@import "/stylesheets/reset.css";
+@import "bootstrap.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 body {
-  margin: 0 !important;
+  max-width: 1080px;
   font-family: 'Roboto', sans-serif;
+
   .nav {
-    background-color: black;
-    color: white;
+    color: #fff;
+    padding: 20px;
+    background-color: #000;
+
     p {
       display: inline-flex;
-      margin-left: 20px;
+      margin: 5px 0 -10px 10px;
     }
+
+    .select-box {
+      margin-left: 5px;
+      display: inline-flex;
+      border: 1px solid #fff;
+
+      select {
+        color: #fff;
+        padding: 4px;
+        width: 130px;
+        font-size: 16px;
+        margin-left: 10px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-appearance: none;
+      }
+
+      select:focus {
+        outline: none;
+      }
+
+      span {
+        font-size: 44px;
+        margin: -20px 5px 0 0;
+      }
+    }
+
   }
 
   .body {
-    display: inline-flex;
-    flex-wrap: wrap;
     margin: 20px;
 
-      .city-description {
-        margin: 10px;
-        padding: 15px;
-        max-width: 700px;
-        background-color: #ebebeb;
+    .row {
+      margin-top: 38px;
+    }
+
+    .city-description {
+      margin: 10px 10px 20px 10px;
+      padding: 15px;
+      background-color: #ebebeb;
+
+      .city {
+        font-size: 36px;
+        font-weight: 500;
+        margin-bottom: 15px;
       }
 
-      .weather {
-        padding: 10px;
-        margin: 10px;
-        max-width: 400px;
-        background-color: #ebebeb;
+      .description {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 1.2;
+      }
+    }
+
+    .weather {
+      margin: 10px 10px 20px 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: #ebebeb;
+
+      .temp {
+        font-size: 100px;
+        font-weight: 800;
+        margin-bottom: -15px;
       }
 
-      .sample {
-        margin: 10px;
-        max-width: 700px;
-        padding: 100px 292px 100px 292px;
-        border: 1px solid #cccccc;
-        color: #cccccc;
+      .view {
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 5px;
       }
-      .maps {
-        margin: 10px;
-        max-width: 400px;
-        img {
-          width: 100%;
-        }
+
+      .date {
+        font-size: 20px;
+        font-weight: 100;
       }
+    }
+
+    .sample {
+      margin: 10px;
+      color: #cccccc;
+      text-align: center;
+      border: 3px solid #cccccc;
+    }
+
+    .maps {
+      margin: 10px;
+      img {
+        width: 100%;
+      }
+    }
 
   }
 
